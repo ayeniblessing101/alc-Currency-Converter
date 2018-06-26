@@ -1,0 +1,23 @@
+{
+  "name": "current-converter",
+  "version": "1.0.0",
+  "description": "This application converts one currency to another while offline or online.",
+  "main": "sw.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayeniblessing101/alc-Currency-Converter.git"
+  },
+  "keywords": [
+    "converter",
+    "currency"
+  ],
+  "author": "Ayeni Blessing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ayeniblessing101/alc-Currency-Converter/issues"
+  },
+  "homepage": "https://github.com/ayeniblessing101/alc-Currency-Converter#readme"
+}
