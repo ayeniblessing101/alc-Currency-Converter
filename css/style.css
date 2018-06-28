@@ -1,0 +1,9 @@
+body {
+  margin-top: 10%;
+}
+
+span.converted-value {
+  font-size: xx-large;
+  color: #000;
+  margin-bottom: 30px;
+}
