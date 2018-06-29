@@ -6,7 +6,8 @@ const filesToCache = [
   './js/bootstrap.min.js',
   './css/style.css',
   './css/bootstrap.min.css',
-  '/'
+  '/',
+  'https://free.currencyconverterapi.com/api/v5/currencies',
 ]
 
 // Install service worker
