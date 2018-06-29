@@ -4,8 +4,6 @@ const select1 = document.getElementById('currency1');
 const select2 = document.getElementById('currency2');
 const option = document.createElement("option");
 
-option.text = "Boy";
-
 // Get all currencies Currency Converter api
 const fetchCurrencies = () => {
   const url = 'https://free.currencyconverterapi.com/api/v5/currencies';
