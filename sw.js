@@ -2,6 +2,7 @@ const cacheName = 'currency-converter-v2';
 
 const filesToCache = [
   './',
+  './index.html',
   './js/app.js',
   './js/bootstrap.min.js',
   './css/style.css',
