@@ -8,6 +8,7 @@ const filesToCache = [
   './css/style.css',
   './css/bootstrap.min.css',
   'https://free.currencyconverterapi.com/api/v5/currencies',
+  'https://unpkg.com/babel-standalone@6/babel.min.js',
 ]
 
 // Install service worker
