@@ -7,7 +7,6 @@ const filesToCache = [
   './css/style.css',
   './css/bootstrap.min.css',
   'https://free.currencyconverterapi.com/api/v5/currencies',
-  'https://free.currencyconverterapi.com/api/v5/convert?q=${query}'
 ]
 
 // Install service worker
