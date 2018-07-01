@@ -1,7 +1,7 @@
 'use strict';
 
-const select1 = document.getElementById('currency1');
-const select2 = document.getElementById('currency2');
+const select1 = document.getElementById('to');
+const select2 = document.getElementById('from');
 const option = document.createElement("option");
 
 // Get all currencies Currency Converter api
@@ -16,19 +16,19 @@ const fetchCurrencies = () => {
         
       const results = Object.values(responses.results);
       results.forEach(result => {
-        var x = document.createElement("OPTION");
-        x.setAttribute("value", result.currencyName);
-        var t = document.createTextNode(result.currencyName);
-        x.appendChild(t);
-        select1.appendChild(x)
+        var option = document.createElement("OPTION");
+        option.setAttribute("value", result.id);
+        var text = document.createTextNode(result.currencyName);
+        option.appendChild(text);
+        select1.appendChild(option)
       });
 
       results.forEach(result => {
-        var x = document.createElement("OPTION");
-        x.setAttribute("value", result.currencyName);
-        var t = document.createTextNode(result.currencyName);
-        x.appendChild(t);
-        select2.appendChild(x)
+        var option = document.createElement("OPTION");
+        option.setAttribute("value", result.id);
+        var text = document.createTextNode(result.currencyName);
+        option.appendChild(text);
+        select2.appendChild(option)
       });
     }).catch((error) => {
         return error;
@@ -36,6 +36,7 @@ const fetchCurrencies = () => {
 }
 
 fetchCurrencies();
+
 
 
 

@@ -13,16 +13,16 @@
         <h1 class="display-4">Currency Converter!</h1>
         <p class="lead">This is a simple app, a simple application that converts one currency to another while offline or online.</p>
         <hr class="my-4">
-        <span class="converted-value">359.50 Nigerian Naira</span>
+        <span class="converted-value" id="result"></span>
         <form>
           <div class="form-group">
             <label for="to"><b>From</b></label>
             <div class="form-row">
               <div class="col">
-                <input type="number" class="form-control" value="0">
+                <input type="number" class="form-control" value="1" id="amount">
               </div>
               <div class="col select-container" id="select-container">
-                <select class="form-control" id="currency1" class="currencies">
+                <select class="form-control" id="from" class="currencies" onchange="selectedFrom()">
                   
                 </select>
               </div>
@@ -30,15 +30,17 @@
           </div>
           <div class="form-group">
             <label for="to"><b>To</b></label>
-            <select class="form-control" id="currency2" class="currencies">
+            <select class="form-control" id="to" class="currencies" onchange="selectedTo()">
 
             </select>
           </div>
         </form>
-        <button type="button" class="btn btn-primary">Convert</button>
+        <button type="button" class="btn btn-primary" onclick="convertCurrency(document.getElementById('amount').value, document.getElementById('from').value, document.getElementById('to').value)">Convert</button>
       </div>
     </div>
     <script src="./js/app.js"></script>
     <script src="./js/currencies.js"></script>
+    <script src="./js/convert-currency.js"></script>
+    <script src="./js/selected.js"></script>
   </body>
 </html>
