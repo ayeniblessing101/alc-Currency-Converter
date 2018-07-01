@@ -21,7 +21,8 @@ const convertCurrency = (amount, fromCurrency, toCurrency) => {
     if(currencyValue) {
       let total = currencyValue * amount;
       total = (Math.round(total * 100) / 100).toLocaleString();
-      result.innerHTML = `${total} ${toCurrency}`
+      result.innerHTML = `${total} ${toCurrency}`;
+      addCurrency(currencyQuery);
     }
   }).catch((error) => {
     return error;

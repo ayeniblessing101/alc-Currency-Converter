@@ -1,4 +1,4 @@
-const cacheName = 'currency-converter-v1';
+const cacheName = 'currency-converter-v2';
 
 const filesToCache = [
   './',
@@ -6,7 +6,6 @@ const filesToCache = [
   './js/bootstrap.min.js',
   './css/style.css',
   './css/bootstrap.min.css',
-  '/',
   'https://free.currencyconverterapi.com/api/v5/currencies',
   'https://free.currencyconverterapi.com/api/v5/convert?q=${query}'
 ]
@@ -31,7 +30,6 @@ self.addEventListener('activate', (event) => {
       }));
     })
   );
-  return self.clients.claim();
 });
 
 // Fetch
